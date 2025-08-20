@@ -547,7 +547,7 @@ def get_recipe_detail(recipe_id):
 @app.route('/health', methods=['GET'])
 def health_check():
     return jsonify({
-        'status': 'healthy',
+        'status': 'healthy good',
         'services': {
             'gemini': bool(os.getenv('GOOGLE_GEMINI_API_KEY')),
             'clarifai': bool(os.getenv('CLARIFAI_API_KEY')),
