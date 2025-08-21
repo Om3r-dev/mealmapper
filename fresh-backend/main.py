@@ -555,6 +555,9 @@ def health_check():
             'blip2': True
         }
     })
+@app.route('/')
+def root():
+    return jsonify({'message': 'Recipe API is running', 'status': 'healthy'})
 
 if __name__ == '__main__':
     # Check for required environment variables
