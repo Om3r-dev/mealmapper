@@ -552,7 +552,7 @@ def health_check():
             'gemini': bool(os.getenv('GOOGLE_GEMINI_API_KEY')),
             'clarifai': bool(os.getenv('CLARIFAI_API_KEY')),
             'spoonacular': bool(os.getenv('SPOONACULAR_API_KEY')),
-            'blip2': True  # Hugging Face is always available
+            'blip2': True
         }
     })
 
